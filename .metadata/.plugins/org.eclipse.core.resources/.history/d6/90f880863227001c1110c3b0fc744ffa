@@ -1,0 +1,35 @@
+package strings;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashSet;
+
+public class SentenceEdu {
+	
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		String sentence = br.readLine();
+		
+		br.close();
+		
+		sentence = sentence.toUpperCase();
+		
+		String[] sArr = sentence.split("");
+		
+		HashSet<String> sSet = new HashSet<String>();
+		for(String s : sArr) {
+			sSet.add(s);
+		}
+		String[] noDupl = sSet.toArray(new String[0]);
+		int[] count = new int[noDupl.length];
+		
+		for(int i=0; i<noDupl.length; i++) {
+			int idx = i;
+			count[i] = Long.valueOf(sentence.chars().mapToObj(String::valueOf).filter(c -> c == noDupl[idx]).count()).intValue();
+		}
+		
+	}
+
+}

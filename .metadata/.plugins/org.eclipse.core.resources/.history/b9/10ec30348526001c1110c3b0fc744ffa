@@ -1,0 +1,11 @@
+package function;
+
+import java.util.Arrays;
+
+public class NumericAdd {
+	
+	public static long sum(int[] a) {
+		return Arrays.stream(a).sum();
+	}
+
+}

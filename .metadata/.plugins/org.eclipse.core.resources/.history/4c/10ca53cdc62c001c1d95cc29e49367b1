@@ -1,0 +1,34 @@
+package solve;
+
+import java.util.HashSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class CompactString {
+	
+	public static int solution(String s) {
+		int answer = s.length();
+		
+		for(int i=2; i<=s.length()/2; i++) {
+			Pattern p = Pattern.compile("[a-z]{" + i + "}");
+			Matcher m = p.matcher(s);
+			HashSet<String> r = new HashSet<String>();
+			while(m.find()) {
+				r.add(m.group());
+			}
+			
+			if(r.size() == 1) {
+				System.out.println("문자열 : " + s + ", 자른 인덱스 : " + i);
+			}
+		}
+		return answer;
+	}
+	
+	public static void main(String[] args) {
+		String[] s = {"aabbaccc", "ababcdcdababcdcd", "abcabcdede", "abcabcabcabcdededededede", "xababcdcdababcdcd"};
+		for(String a : s) {
+			System.out.println(solution(a));
+		}
+	}
+
+}

@@ -1,0 +1,17 @@
+package onedimension;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Rest {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		List<Integer> arr = new ArrayList<Integer>();
+		while(sc.hasNext()) {
+			arr.add(sc.nextInt()%42);
+		}
+	}
+
+}

@@ -1,0 +1,9 @@
+package ioandsachick;
+
+import java.util.Scanner;
+
+public class AmultipleB {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	}
+}

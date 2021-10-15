@@ -1,0 +1,19 @@
+package solve;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ThatSong {
+	
+	public String solution(String m, String[] musicinfos) {
+		String answer = "";
+		return answer;
+	}
+	
+	public static void main(String[] args) {
+		String[] m = {"ABCDEFG", "CC#BCC#BCC#BCC#B", "ABC"};
+		List<String[]> musicinfos = new ArrayList<String[]>();
+		musicinfos.add(("12:00,12:14,HELLO,CDEFGAB,13:00,13:05,WORLD,ABCDEF").split(","));
+	}
+
+}

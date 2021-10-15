@@ -1,0 +1,26 @@
+package whilegrammer;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class AddCycle {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		sc.close();
+		
+		List<Integer> arr = new ArrayList<Integer>();
+		int sum = a;
+		int cnt = 0;
+		
+		do {
+			int x = Integer.parseInt(Integer.toString(a).split("")[0]);
+			int y = Integer.parseInt(Integer.toString(a).split("")[1]);
+		} while(sum == a);
+		
+		
+	}
+
+}

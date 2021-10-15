@@ -1,0 +1,18 @@
+package solve;
+
+public class NewId {
+	
+	public static String solution(String new_id) {
+		String answer = "";
+		return answer;
+	}
+	
+	public static void main(String[] args) {
+		String[] new_id = {"...!@BaT#*..y.abcdefghijklm", "z-+.^.", "=.=", "123_.def", "abcdefghijklmn.p"};
+		
+		for(String a : new_id) {
+		System.out.println(solution(a));
+		}
+	}
+
+}

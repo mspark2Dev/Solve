@@ -1,0 +1,18 @@
+package function;
+
+public class SelfNumber {
+	
+	public static void main(String[] args) {
+		int n = 0;
+		
+		while(n <= 10000) {
+			n = selfNum(1);
+			System.out.println(1);
+		}
+	}
+	
+	public static int selfNum(int a) {
+		return 0;
+	}
+
+}

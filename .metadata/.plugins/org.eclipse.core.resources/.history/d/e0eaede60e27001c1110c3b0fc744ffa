@@ -1,0 +1,15 @@
+package strings;
+
+import java.util.Scanner;
+
+public class FirstIndex {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String S = sc.nextLine();
+		sc.close();
+		
+		String sArr = {"a", "b"};
+	}
+
+}

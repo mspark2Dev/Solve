@@ -1,0 +1,30 @@
+package solve;
+
+import java.util.Stack;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class CompactString {
+	
+	public static int solution(String s) {
+		int answer = s.length();
+		
+		for(int i=1; i<=s.length()/2; i++) {
+			Stack<String> stack = new Stack<String>();
+			Pattern p = Pattern.compile("[a-z]{" + i + "}");
+			Matcher m = p.matcher(s);
+			while(m.find()) {
+				stack.push(m.group());
+			}
+		}
+		return answer;
+	}
+	
+	public static void main(String[] args) {
+		String[] s = {"aabbaccc", "ababcdcdababcdcd", "abcabcdede", "abcabcabcabcdededededede", "xababcdcdababcdcd"};
+		for(String a : s) {
+			System.out.println(solution(a));
+		}
+	}
+
+}

@@ -1,0 +1,47 @@
+package stack;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class VPS {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		int n = Integer.parseInt(br.readLine());
+
+		for (int i = 0; i < n; i++) {
+			String line = br.readLine();
+			boolean isRun = false;
+
+			if (line.startsWith(")")) {
+				System.out.println("NO");
+			} else {
+				for (int j = 0; j < line.length(); j++) {
+					char one = line.charAt(j);
+
+					if (one == '(') {
+						_push();
+					} else {
+						if (_isEmpty()) {
+							System.out.println("NO");
+							isRun = true;
+						} else {
+							_pop();
+						}
+					}
+				}
+				
+				if (!isRun) {
+					if (_isEmpty()) {
+						System.out.println("YES");
+					} else {
+						System.out.println("NO");
+					}
+				}
+			}
+		}
+
+	}
+}

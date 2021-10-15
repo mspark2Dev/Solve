@@ -1,0 +1,9 @@
+package other;
+
+public class NormalBag {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

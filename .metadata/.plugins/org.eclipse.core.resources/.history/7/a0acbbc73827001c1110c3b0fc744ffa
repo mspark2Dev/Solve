@@ -1,0 +1,24 @@
+package strings;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Sangsoo {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String line = sc.nextLine();
+		sc.close();
+		
+		int[] nums = Arrays.stream(line.split(" ")).mapToInt(Integer::parseInt).toArray();
+		
+		int max = Arrays.stream(nums).max().getAsInt();
+		
+		String[] reversNum = Integer.toString(max).split("");
+		
+		for(int i=reversNum.length-1; i>-1; i--) {
+			System.out.print(reversNum[i]);
+		}
+	}
+
+}

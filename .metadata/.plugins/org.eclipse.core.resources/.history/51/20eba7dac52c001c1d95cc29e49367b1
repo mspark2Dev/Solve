@@ -1,0 +1,35 @@
+package solve;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class CompactString {
+	
+	public static int solution(String s) {
+		int answer = s.length();
+		
+		for(int i=2; i<=s.length()/2; i++) {
+			System.out.println(i);
+			Pattern p = Pattern.compile("[a-z]{2}");
+			Matcher m = p.matcher(s);
+			List<String> r = new ArrayList<String>();
+			while(m.find()) {
+				r.add(m.group());
+			}
+			
+			System.out.println(Arrays.toString(r.toArray(new String[r.size()])));
+		}
+		return answer;
+	}
+	
+	public static void main(String[] args) {
+		String[] s = {"aabbaccc", "ababcdcdababcdcd", "abcabcdede", "abcabcabcabcdededededede", "xababcdcdababcdcd"};
+		for(String a : s) {
+			System.out.println(solution(a));
+		}
+	}
+
+}

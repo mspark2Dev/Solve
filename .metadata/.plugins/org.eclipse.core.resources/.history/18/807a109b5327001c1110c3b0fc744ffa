@@ -1,0 +1,10 @@
+package strings;
+
+public class CroatiaAlphabet {
+	
+	public static void main(String[] args) {
+		String[] croaAlpha = {"c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="};
+		
+	}
+
+}

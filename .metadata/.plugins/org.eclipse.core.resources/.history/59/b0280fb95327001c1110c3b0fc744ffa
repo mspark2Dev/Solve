@@ -1,0 +1,13 @@
+package strings;
+
+import java.util.Scanner;
+
+public class CroatiaAlphabet {
+	
+	public static void main(String[] args) {
+		String[] croaAlpha = {"c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="};
+		
+		Scanner sc = new Scanner(System.in);
+	}
+
+}

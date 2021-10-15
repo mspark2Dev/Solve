@@ -1,0 +1,21 @@
+package onedimension;
+
+import java.util.Scanner;
+
+public class NumsCount {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		sc.close();
+		
+		int sum = a*b*c;
+		for(int i=1; i<10; i++) {
+			int cnt = i;
+			System.out.println(Integer.toString(sum).chars().filter(s -> s == cnt).count());
+		}
+	}
+
+}

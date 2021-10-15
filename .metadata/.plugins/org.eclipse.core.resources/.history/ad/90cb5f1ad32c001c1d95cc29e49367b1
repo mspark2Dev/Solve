@@ -1,0 +1,10 @@
+package solve;
+
+public class MenuRenewal {
+	
+	public static String[] solution(String[] orders, int[] course) {
+		String[] answer = {};
+		return answer;
+	}
+
+}

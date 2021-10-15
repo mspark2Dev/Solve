@@ -1,0 +1,24 @@
+package solve;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MenuRenewal {
+	
+	public static String[] solution(String[] orders, int[] course) {
+		String[] answer = {};
+		return answer;
+	}
+	
+	public static void main(String[] args) {
+		List<String[]> orders = new ArrayList<String[]>();
+		List<Integer[]> course = new ArrayList<Integer[]>();
+		orders.add(("ABCFG,AC,CDE,ACDE,BCFG,ACDEH").split(","));
+		orders.add("");
+		orders.add("");
+		course.add(null);
+		course.add(null);
+		course.add(null);
+	}
+
+}

@@ -1,0 +1,11 @@
+package strings;
+
+import java.io.BufferedReader;
+
+public class NumbersSum {
+	
+	public static void main(String[] args) {
+		BufferedReader br = new BefferedReader(InputStreamReader(System.in));
+	}
+
+}

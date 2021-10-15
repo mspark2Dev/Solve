@@ -1,0 +1,45 @@
+package solve;
+
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class ThatSong {
+	
+	public static String solution(String m, String[] musicinfos) throws ParseException {
+		String answer = "(None)";
+		for(String a : musicinfos) {
+			String music = a.split(",")[3];
+			int start = (Integer.parseInt(a.split(",")[0].split(":")[0]) * 60) + (Integer.parseInt(a.split(",")[0].split(":")[1]));
+			int end = (Integer.parseInt(a.split(",")[1].split(":")[0]) * 60) + (Integer.parseInt(a.split(",")[1].split(":")[1]));
+			
+			int time = end - start;
+			
+			while(music.length() < time) {
+				music += music;
+			}
+			
+			Pattern p = Pattern.compile("[A-Z]#?");
+			Matcher mat = p.matcher(m);
+		}
+		return answer;
+	}
+	
+	public static void main(String[] args) throws ParseException {
+		String[] m = {"ABCDEFG", "CC#BCC#BCC#BCC#B", "ABC"};
+		List<String[]> musicinfos = new ArrayList<String[]>();
+		String[] a1 = {"12:00,12:14,HELLO,CDEFGAB", "13:00,13:05,WORLD,ABCDEF"};
+		String[] a2 = {"03:00,03:30,FOO,CC#B", "04:00,04:08,BAR,CC#BCC#BCC#B"};
+		String[] a3 = {"12:00,12:14,HELLO,C#DEFGAB", "13:00,13:05,WORLD,ABCDEF"};
+		musicinfos.add(a1);
+		musicinfos.add(a2);
+		musicinfos.add(a3);
+		
+		for(int i=0; i<musicinfos.size(); i++) {
+			System.out.println(solution(m[i], musicinfos.get(i)));
+		}
+	}
+
+}

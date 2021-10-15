@@ -1,0 +1,9 @@
+package other;
+
+public class DecompositionSum {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package solve;
+
+public class ThatSong {
+	
+	public String solution(String m, String[] musicinfos) {
+		String answer = "";
+		return answer;
+	}
+	
+	public static void main(String[] args) {
+		String[] m = {"ABCDEFG", "CC#BCC#BCC#BCC#B", "ABC"};
+	}
+
+}

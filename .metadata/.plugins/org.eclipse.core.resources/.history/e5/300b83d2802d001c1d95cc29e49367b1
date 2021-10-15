@@ -1,0 +1,19 @@
+package solve;
+
+public class NumberStringAndEnglish {
+
+	public static int solution(String s) {
+		int answer = 0;
+		String[] numbers = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
+		return answer;
+	}
+
+	public static void main(String[] args) {
+		String[] s = { "one4seveneight", "23four5six7", "2three45sixseven", "123" };
+
+		for (String a : s) {
+			System.out.println(solution(a));
+		}
+	}
+
+}

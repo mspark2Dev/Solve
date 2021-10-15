@@ -1,0 +1,61 @@
+package stack;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Stack {
+
+	static List<Integer> stack = new ArrayList<Integer>();
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		sc.nextLine();
+
+		for (int i = 0; i < n; i++) {
+			String s = sc.nextLine();
+			String[] sArr = s.split(" ");
+			
+			if(sArr.length > 1) {
+				push(Integer.parseInt(sArr[1]));
+			} else {
+				switch(sArr[0].toLowerCase()) {
+				case "pop":
+					pop();
+				}
+			}
+		}
+
+	}
+
+	public static void push(int a) {
+		stack.add(a);
+	}
+
+	public static void pop() {
+		if (stack.size() == 0) {
+			System.out.println(-1);
+		} else {
+			System.out.println(stack.get(stack.size() - 1));
+			stack.remove(stack.size() - 1);
+		}
+	}
+
+	public static void size() {
+		System.out.println(stack.size());
+	}
+
+	public static void empty() {
+		System.out.println(stack.size() == 0 ? 1 : 0);
+	}
+
+	public static void top() {
+		if (stack.size() == 0) {
+			System.out.println(-1);
+		} else {
+			System.out.println(stack.get(stack.size() - 1));
+		}
+	}
+
+}

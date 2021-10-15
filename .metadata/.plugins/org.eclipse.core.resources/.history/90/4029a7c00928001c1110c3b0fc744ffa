@@ -1,0 +1,18 @@
+package strings;
+
+public class GroupSentence {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	public static boolean isGroup(String s) {
+		
+		boolean group = true;
+		
+		int idx = -1;
+		
+		return false;
+	}
+
+}

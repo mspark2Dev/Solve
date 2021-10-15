@@ -1,0 +1,24 @@
+package solve;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ThatSong {
+	
+	public String solution(String m, String[] musicinfos) {
+		String answer = "";
+		return answer;
+	}
+	
+	public static void main(String[] args) {
+		String[] m = {"ABCDEFG", "CC#BCC#BCC#BCC#B", "ABC"};
+		List<String[]> musicinfos = new ArrayList<String[]>();
+		String[] a1 = {"12:00,12:14,HELLO,CDEFGAB", "13:00,13:05,WORLD,ABCDEF"};
+		String[] a2 = {"03:00,03:30,FOO,CC#B", "04:00,04:08,BAR,CC#BCC#BCC#B"};
+		String[] a3 = {"12:00,12:14,HELLO,C#DEFGAB", "13:00,13:05,WORLD,ABCDEF"};
+		musicinfos.add(a1);
+		musicinfos.add(a2);
+		musicinfos.add(a3);
+	}
+
+}

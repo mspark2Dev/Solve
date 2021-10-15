@@ -1,0 +1,9 @@
+package other;
+
+public class MusicalScales {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

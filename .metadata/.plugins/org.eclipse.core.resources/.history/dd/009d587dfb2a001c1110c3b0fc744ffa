@@ -1,0 +1,41 @@
+package stackgrammer;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class VPS {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		int n = Integer.parseInt(br.readLine());
+
+		for (int i = 0; i < n; i++) {
+			String line = br.readLine();
+			boolean isRun = false;
+
+			Stack<Character> stack = new Stack<>();
+
+            String input = sc.next();
+            boolean flag = true;
+            for (int i = 0; i < input.length(); i++) {
+                char now = input.charAt(i);
+                if (now == '(')
+                    stack.push(now);
+                else if (now == ')') {
+                    if (stack.size() > 0)
+                        stack.pop();
+                    else
+                        flag = false;
+                }
+                if (!flag)
+                    break;
+            }
+            if (stack.size() > 0)
+                flag = false;
+		}
+		}
+
+	}
+}

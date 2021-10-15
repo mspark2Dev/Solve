@@ -1,0 +1,9 @@
+package strings;
+
+public class Dial {
+	
+	public static void main(String[] args) {
+		String[] dials = {"", "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ",""};
+	}
+
+}

@@ -1,0 +1,21 @@
+package ifgrammer;
+
+import java.util.Scanner;
+
+public class Alarm {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int h = sc.nextInt();
+		int m = sc.nextInt();
+		sc.close();
+		
+		h = h == 0 ? 24 : h;
+		int minutes = h * 60 + m;
+		minutes = minutes - 45;
+		
+		System.out.println(Integer.toString(minutes / 60) + " " + Integer.toString(minutes - (minutes / 60)));
+		
+	}
+
+}

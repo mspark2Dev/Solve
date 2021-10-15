@@ -1,0 +1,11 @@
+package onedimension;
+
+import java.util.Scanner;
+
+public class ExceedTheAverage {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	}
+	
+}
