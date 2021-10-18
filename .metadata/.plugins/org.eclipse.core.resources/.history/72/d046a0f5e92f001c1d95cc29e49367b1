@@ -1,0 +1,21 @@
+package solve;
+
+public class Parenthesis {
+	
+	public static String solution(String p) {
+		String answer = "";
+		return answer;
+	}
+	
+	public static void main(String[] args) {
+		String[] p = {"(()())()", ")(", "()))((()"};
+		String[] answer = {"(()())()", "()", "()(())()"};
+		
+		for(int i=0; i<p.length; i++) {
+			String res = solution(p[i]);
+			System.out.println(res);
+			System.out.println(res.equals(answer[i]));
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+package solve;
+
+public class Parenthesis {
+	
+	public static String solution(String p) {
+		String answer = "";
+		return answer;
+	}
+	
+	public static void main(String[] args) {
+		String[] p = {"(()())()", ")(", "()))((()"};
+		String[] answer = {"(()())()", "()", "()(())()"};
+	}
+
+}

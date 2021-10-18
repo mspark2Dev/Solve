@@ -1,0 +1,10 @@
+package solve;
+
+public class CrainDollCatch {
+	
+	public static int solution(int[][] board, int[] moves) {
+		int answer = 0;
+		return answer;
+	}
+
+}

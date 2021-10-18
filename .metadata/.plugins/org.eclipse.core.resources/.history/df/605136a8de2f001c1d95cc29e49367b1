@@ -1,0 +1,15 @@
+package solve;
+
+public class NewsClustering {
+	
+	public static int solution(String str1, String str2) {
+		int answer = 0;
+		return answer;
+	}
+	
+	public static void main(String[] args) {
+		String[] srt1 = {"FRANCE", "handshake", "aa1+aa2", "E=M*C^2"};
+		String[] str2 = {"french", "shake hands", "AAAA12", "e=m*c^2"};
+	}
+
+}

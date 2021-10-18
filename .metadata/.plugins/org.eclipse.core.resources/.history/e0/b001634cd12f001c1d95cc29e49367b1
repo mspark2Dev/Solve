@@ -1,0 +1,17 @@
+package solve;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Keypad {
+	
+	public static String solution(int[] numbers, String hand) {
+		String answer = "";
+		return answer;
+	}
+	
+	public static void main(String[] args) {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	}
+
+}
